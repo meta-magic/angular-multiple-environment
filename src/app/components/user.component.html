@@ -1,0 +1,32 @@
+<br>
+<amexio-label size="medium-bold">
+    List Of Users Loaded From - {{enviorment}}
+</amexio-label>
+<hr />
+<amexio-row>
+    <amexio-column [size]=12>
+        <amexio-layout-columns [border]="false" [orientation]="'horizontal'">
+            <amexio-layout-item *ngFor="let user of users">
+                <amexio-card-ce>
+                    <amexio-header-ce>
+                        <amexio-image width="100px" [filter]="'round'"
+                            [path]="'https://api.amexio.org/api/v5.15/assets/images/profile/'+user.profile">
+                        </amexio-image>
+                    </amexio-header-ce>
+                    <amexio-body-ce [align]="'start'">
+                        <amexio-label [size]="'medium'">
+                            {{ user.name }}
+                        </amexio-label>
+                        <p>
+                            {{ user.email }}
+                        </p>
+                    </amexio-body-ce>
+                    <amexio-action-ce [align]="'center'" [border-top]="true">
+                        <amexio-button [label]="'CONNECT'" [type]="'transparent'" [tooltip]="'CONNECT'">
+                        </amexio-button>
+                    </amexio-action-ce>
+                </amexio-card-ce>
+            </amexio-layout-item>
+        </amexio-layout-columns>
+    </amexio-column>
+</amexio-row>
