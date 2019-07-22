@@ -19,7 +19,7 @@ export class AppInitService {
     }
 
     loadUrls(): Promise<any> {
-        const promise = this.httpClient.get('assets/config/appurl.json')
+        const promise = this.httpClient.get('assets/config/environment.json')
             .toPromise()
             .then((env: any) => {
                 debugger;
