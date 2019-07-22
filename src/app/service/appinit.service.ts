@@ -23,9 +23,9 @@ export class AppInitService {
             .toPromise()
             .then((env: any) => {
                 debugger;
-                APP_URL.product = env.producturl;
-                APP_URL.order = env.orderurl;
-                APP_URL.user = env.userurl;
+                APP_URL.product = env.settings.producturl;
+                APP_URL.order = env.settings.orderurl;
+                APP_URL.user = env.settings.userurl;
                 return env;
             });
         return promise;
