@@ -1,5 +1,8 @@
 {
+  "name": "staging",
+  "production": true,
+  "settings": {
     "userurl":"https://raw.githubusercontent.com/meta-magic/amexio-ee-demo-app/master/src/assets/jsondata/user.json",
     "producturl": "https://raw.githubusercontent.com/meta-magic/amexio-ee-demo-app/master/src/assets/jsondata/products.json",
-    "orderurl" : "ORDERS_DEV_URL"
+  }
 }
