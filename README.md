@@ -1,6 +1,6 @@
 # Angular Multiple Enviorment
 
-This Project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
+Project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
 
 ## Development server
 
